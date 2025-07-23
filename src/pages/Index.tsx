@@ -1,5 +1,3 @@
-import angryCodeLogo from "@/assets/angrycode-logo.png";
-import raavLogo from "@/assets/raav-logo.png";
 import { Card } from "@/components/ui/card";
 
 const Index = () => {
@@ -10,13 +8,12 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo e Título Principal */}
           <div className="mb-12">
-            <div className="flex justify-center mb-8">
-              <img 
-                src={raavLogo} 
-                alt="Raav Logo" 
-                className="h-20 lg:h-24 animate-float"
-              />
+            <div className="inline-block p-4 bg-gradient-primary rounded-full mb-8 animate-float">
+              <span className="text-6xl font-bold text-white">R</span>
             </div>
+            <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6">
+              RAAV
+            </h1>
             <p className="text-xl lg:text-2xl text-muted-foreground mb-8">
               Fintech Digital
             </p>
@@ -46,11 +43,9 @@ const Index = () => {
               Desenvolvido por
             </p>
             <div className="flex items-center justify-center space-x-4">
-              <img 
-                src={angryCodeLogo} 
-                alt="AngryCode Logo" 
-                className="w-16 h-16 lg:w-20 lg:h-20"
-              />
+              <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-primary rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-2xl lg:text-3xl">AC</span>
+              </div>
               <div className="text-left">
                 <h3 className="text-2xl lg:text-3xl font-bold text-foreground">
                   AngryCode
